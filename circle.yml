@@ -5,4 +5,4 @@ dependencies:
     - openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
 test:
   override:
-    - echo "FOO: $FOO BAR: $BAR"
+    - "echo FOO: $FOO BAR: $BAR"
