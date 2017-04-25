@@ -5,8 +5,8 @@ This is a simple example of storing encrypted files in source for use in CircleC
 In this example, the gitignored contents of `secret-env-plain` are:
 
 ```
-FOO=secret
-BAR=alsosecret
+export FOO=secret
+export BAR=alsosecret
 ```
 
 If they are encrypted with `openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY`, and `$KEY` is set
