@@ -5,4 +5,3 @@ source secret-env-plain
 #rm secret-env-plain
 
 echo "FOO: ${FOO} BAR: ${BAR}"
-echo $(openssl version)
