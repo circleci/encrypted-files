@@ -1,1 +1,3 @@
-/secret-env-plain
+.circleci/secret-env-plain
+.circleci/encrypt.sh
+.idea
