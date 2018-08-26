@@ -20,5 +20,5 @@ jobs:
           name: Decrypt and source env vars
           command: |
             cd .circleci
-            chmod +x decrypt.sh
-            ./decrypt.sh
+            chmod +x set-env-vars.sh
+            ./set-env-vars.sh
