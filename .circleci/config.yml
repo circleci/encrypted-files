@@ -19,9 +19,14 @@ jobs:
       - run:
           name: Decrypt and source env vars
           command: |
-            cd .circleci
-            chmod +x set-env-vars.sh
-            ./set-env-vars.sh
+            openssl aes-256-cbc -d -in secret-env-cipher -out secret-env-generated -md sha256 \
+                -pass env:OPENSSL_PASSWORD
+
+            source secret-env-generated
+
+            rm secret-env-generated
+
+            echo "FOO: ${FOO} BAR: ${BAR}"
 
       - run:
           name: Access env vars in another script
