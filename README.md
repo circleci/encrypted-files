@@ -96,4 +96,3 @@ If you're following with this example, you should see the values we set in `env.
 ```
 FOO: secret3 BAR: secret4
 ```
- 
