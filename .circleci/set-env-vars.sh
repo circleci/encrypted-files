@@ -2,5 +2,5 @@
 
 openssl aes-256-cbc -d -md sha256 \
     -in env.cipher \
-    -pass env:OPENSSL_PASSWORD \
+    -pass env:CIRCLE_OPEN_SSL_PASSWORD \
     >> $BASH_ENV

@@ -3,4 +3,4 @@
 openssl aes-256-cbc -d \
     -in  env.cipher \
     -out env.generated -md sha256 \
-    -pass env:OPENSSL_PASSWORD
+    -pass env:CIRCLE_OPEN_SSL_PASSWORD
