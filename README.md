@@ -89,7 +89,11 @@ git commit -m "Updated env vars"
 git push
 ```
 
-14- Head to Circle's dashboard and check. If everything goes well, you should see your values in the
+14- Head to Circle's dashboard and check. If everything goes well, you should see your values at the end of the
 `Access env vars in another script` step.
+
+If you're following with this example, you should see the values we set in `env.plain`:
+```
+FOO: secret3 BAR: secret4
+```
  
-15- Celebrate.
