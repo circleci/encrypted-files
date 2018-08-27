@@ -6,5 +6,3 @@ openssl aes-256-cbc -d -in secret-env-cipher -out secret-env-generated -md sha25
 source secret-env-generated
 
 rm secret-env-generated
-
-echo "FOO: ${FOO} BAR: ${BAR}"
