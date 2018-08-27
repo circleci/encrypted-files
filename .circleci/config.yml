@@ -22,3 +22,10 @@ jobs:
             cd .circleci
             chmod +x set-env-vars.sh
             ./set-env-vars.sh
+
+      - run:
+          name: Access env vars in another script
+          command: |
+            cd .circleci
+            chmod +x print-env-vars.sh
+            ./print-env-vars.sh
