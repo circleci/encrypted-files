@@ -27,7 +27,7 @@ If you'd like to test this for your own project, here's a general step by step o
 3- In Circle's Project Settings, set the environment variable `CIRCLE_OPEN_SSL_PASSWORD` to a secured password.
 Remember this value since you're going to use it later.
 
-4- Clone the repository.
+4- Clone the repository to your local machine.
 
 5- Set the same environment variable `CIRCLE_OPEN_SSL_PASSWORD` to the same value on your local machine.
 
@@ -57,7 +57,7 @@ chmod +x decrypt-local.sh
 
 10- To verify, locally, that decryption would work as expected, run the decrypt script:
 ```
-./dcrypt-local.sh
+./decrypt-local.sh
 ```
 This will generate a file called `env.generated`.
 
