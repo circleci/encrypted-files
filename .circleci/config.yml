@@ -1,0 +1,31 @@
+version: 2
+general:
+  branches:
+    only:
+      - master
+
+jobs:
+  build:
+
+    docker:
+      - image: circleci/openjdk:8-jdk
+
+    working_directory: ~/project
+
+    steps:
+
+      - checkout
+
+      - run:
+          name: Decrypt and source env vars
+          command: |
+            cd .circleci
+            chmod +x set-env-vars.sh
+            ./set-env-vars.sh
+
+      - run:
+          name: Access env vars in another script
+          command: |
+            cd .circleci
+            chmod +x print-env-vars.sh
+            ./print-env-vars.sh

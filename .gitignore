@@ -1,1 +1,3 @@
-/secret-env-plain
+.idea
+*.plain
+*.generated
