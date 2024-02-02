@@ -1,3 +1,3 @@
 # Placeholder CODEOWNERS file as this repo did not have one
 # Please make a PR adding the correct owner or request that this repo be archived
-* @circleci/security-operations
+* @circleci/default-security-operations
